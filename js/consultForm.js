@@ -16,15 +16,25 @@ function submitForm(event) {
         specificSubject = document.getElementById("dropdownOptions").value.trim();
     }
 
-    // Prepare the message for WhatsApp
-    let whatsappMessage = `Name: ${fullname}\nEmail: ${email}\nPhone: ${phone}\nQuery Type: ${queryType}\nSubject: ${specificSubject}\nMessage: ${message}`;
-    whatsappMessage = encodeURIComponent(whatsappMessage); // Encode the message for URL
+    // Prepare the email message
+    const emailBody = `
+        Name: ${fullname}
+        Email: ${email}
+        Phone: ${phone}
+        Query Type: ${queryType}
+        Subject: ${specificSubject}
+        Message: ${message}
+    `;
+    
+    const body = encodeURIComponent(emailBody);
 
-    // Replace with the owner's phone number in international format
-    const ownerPhoneNumber = "919821937240";
+    // Replace with the owner’s email address
+    const recipientEmail = "consult@pinakinmicro.com";
 
-    // Open WhatsApp with the formatted message
-    window.open(`https://wa.me/${ownerPhoneNumber}?text=${whatsappMessage}`, '_blank');
+    // Construct the mailto link
+    window.location.href = `mailto:${recipientEmail}?subject=${queryType}&body=${body}`;
+
+    document.getElementById("consultForm").reset();
 }
 
 // Function to handle showing and hiding specific fields based on query type
