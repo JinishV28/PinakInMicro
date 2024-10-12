@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/consult.css">
+</head>
+
+<body>
+    <div id="consultModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Consultation Form</h4>
+                    <button type="button" data-bs-dismiss="modal" class="close" id="crossButton1">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="consultForm" onsubmit="submitForm(event)">
+                        <div class="form-group row">
+                            <div class="col-12 col-md-6">
+                                <label for="fullname">Full Name</label>
+                                <input type="text" class="form-control" id="fullname" aria-describedby="emailHelp"
+                                    placeholder="Enter Full Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-12 col-md-6">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="phoneno">Contact Number</label>
+                                <input type="number" class="form-control" id="phoneno" aria-describedby="emailHelp"
+                                    placeholder="Enter Number">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-6">
+                                <label for="queryType">Select Query Type:</label>
+                                <div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="queryType" id="consultation" value="Consultation" onclick="updateDropdown()" checked required>
+                                        <label class="form-check-label" for="consultation">Consultation</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="queryType" id="training" value="Training" onclick="updateDropdown()" required>
+                                        <label class="form-check-label" for="training">Training</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="queryType" id="other" value="Other" onclick="showOtherInput()" required>
+                                        <label class="form-check-label" for="other">Other</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row" id="dropdownContainer">
+                            <div class="col-12">
+                                <label for="dropdownOptions">Select an Option:</label>
+                                <select class="form-select" id="dropdownOptions">
+                                    <option value="">--Select--</option>
+                                    <option value="Audits & Inspections">Audits & Inspections</option>
+                                    <option value="Data integrity risk">Data integrity risk</option>
+                                    <option value="Contamination controls">Contamination controls</option>
+                                    <option value="Rapid methods">Rapid methods</option>
+                                    <option value="Stability and validation">Stability and validation</option>
+                                    <option value="New laboratory design">New laboratory design</option>
+                                    <option value="Facility risk assessment">Facility risk assessment</option>
+                                    <option value="Product/materials risk">Product/materials risk</option>
+                                    <option value="Customized trainings">Customized trainings</option>
+                                    <option value="Failure investigation">Failure investigation</option>
+                                    <option value="Sterilization controls">Sterilization controls</option>
+                                    <option value="Microbiological Claims">Microbiological Claims</option>
+                                </select>
+                            </div>
+                        </div>                        
+                        <div class="form-group row" id="otherInputContainer" style="display: none;">
+                            <div class="col-12">
+                                <label for="otherSubject">Please specify your subject:</label>
+                                <input type="text" class="form-control" id="otherSubject" placeholder="Enter your subject">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-12">
+                                <label for="message">Any Suggestions</label>
+                                <textarea class="form-control" name="message" id="message" rows="6" placeholder="Enter Your Comments/Suggestions Here (If Any)"></textarea>
+                            </div>
+                        </div>
+                        <div id="notificationContainer" class="alert alert-success" style="display: none;" role="alert">
+                            We have received your query. We will reach out to you soon.
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-default btn-submit">Send</button>
+                            </div>
+                        </div>            
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark navbar-expand-lg flex-column">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="./assets/img/Header-logo.png" alt="" height="60px"></a>
+            <!-- <a class="navbar-brand" href="#"><img src="img/ppt logo.webp" height="60" width="60"></a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./consultation.html">Consultation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./training.html">Training</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+                </ul>
+                <button class="btn btn-default d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+            </div>
+        </div>
+        <div class="slogan-container text-center d-none d-md-block">
+            <p class="slogan">Transforming mystery to mastery</p>
+        </div>
+    </nav>
+    <div class="jumbotron title-banner">
+        <h1>Consultation</h1>
+    </div>
+    <div class="section consultation-intro">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <h3>At “Pinakin Shah MoreMicro”, we offer expert microbiology consulting services to enhance and protect
+                    businesses through -</h3>
+            </div>
+        </div>
+        <div class="row justify-content-center consultation-services">
+            <div class="col-10">
+                <dl class="accordion collapsable">
+                    <dt>Audits & Inspections<span>&#x2BC8</span></dt>
+                    <dd>Preparing laboratory and facilities for Regulatory and Quality Compliance 
+                        audits/inspections</dd>
+
+                    <dt>Speed to Markets<span>&#x2BC8</span></dt>
+                    <dd>Microbiological controls in manufacturing and releasing quality products rapidly 
+                        (Rapid microbiological methods, PAT, Parametric releases) to the markets.</dd>
+
+                    <dt>Design robustness assessments<span>&#x2BC8</span></dt>
+                    <dd>Scientific risk model-based assessment of manufacturing facili
+                        ties, formulations, Raw materials and packaging materials</dd>
+
+                    <dt>Failure Investigations & resolutions<span>&#x2BC8</span></dt>
+                    <dd>Marketed Product failure investigations, CAPA and risk 
+                        assessment for Objectionable organisms</dd>
+
+                    <dt>Training & coaching<span>&#x2BC8</span></dt>
+                    <dd>Prepare teams and organization for Lab of the future/future generation of 
+                        microbiologists</dd>
+
+                    <dt>Claims substantiation<span>&#x2BC8</span></dt>
+                    <dd>Creating and supporting new microbiological claims on the products 
+                        (including claims for prebiotics, probiotics, preservative free)</dd>
+                    
+                    <dt>Sterilization process controls<span>&#x2BC8</span></dt>
+                    <dd> Microbiological Qualification of sterilization processes for Steam, 
+                        Gamma,Ethylene oxide etc.</dd>
+
+                    <dt>Laboratory processes & QMS -<span>&#x2BC8</span></dt>
+                    <dd> Establishing laboratory and Microbiological Quality Management 
+                        Systems (QMS) for greenfield projects.</dd>
+
+                    <dt>Data Integrity risk assessment & contamination control strategies<span>&#x2BC8</span></dt>
+                    <dd>Implement Data Integrity risk assessment (DIRA) and contamination control strategies (CCS)</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <div class="section other-services">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <h3>Other services we offer to our partners for freeing up their resources from Non-Innovation led
+                    activities.</h3>
+            </div>
+        </div>
+        <div class="container">
+            <div id="eventCarousel" class="carousel" data-bs-ride="carousel">
+                <div class="carousel-inner col-10 col-md-12">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Protocol preparation for validation, Qualification, microbiological studies etc.</p>
+                                <img src="./assets/img/consult/protocol.jpg" width="100%" height="200px" style="border-radius: 20px;">
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Microbiological data and Report review</p>
+                                <img src="./assets/img/consult/microbiology.jpg" width="100%" height="200px" style="border-radius: 20px;">
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Report preparation from the raw data</p>
+                                <img src="./assets/img/consult/report.jpg" width="100%" height="200px">
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Organize fit for purpose accredited  CRO/Testing laboratories for specialized needs on microbiology</p>
+                                <img src="./assets/img/consult/lab.jpg" width="100%" height="200px">
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Creating training modules and competency assessment plan</p>
+                                <img src="./assets/img/consult/training module.jpg" width="100%" height="200px">
+                                <div class="row justify-content-center">
+                                    <button class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev"
+                    style="margin-left: -1%;">
+                    <span style="color: #0B3259; font-size: 2em;">&#x2190;</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next"
+                    style="margin-right: 0%;">
+                    <span style="color: #0B3259; font-size: 2em;">&#x2192;</span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="need-support section">
+        <h1>Need Support?</h1>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <button class="btn" onclick="window.location.href='contact.html';">Reach Us Now &#x2192</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row contact-details justify-content-center">
+            <div class="col-12 col-md-3">
+                <p>+91-9821937240</p>
+            </div>
+            <div class="col-12 offset-md-1 col-md-2">
+                <p>Mumbai</p>
+            </div>
+            <div class="col-12 col-md-3">
+                <a href="mailto:1008vipa@gmail.com">1008vipa@gmail.com</a>
+            </div>
+        </div>
+        <div class="row justify-content-center company-details">
+            <div class="col-12 col-md-3 footer-logo">
+                <img class="ft-logo" src="./assets/img/Logo.png" alt="">
+                <p>Transforming mystery to mastery</p>
+            </div>
+            <div class="col-12 offset-md-1 col-md-2 abt-links">
+                <h6>Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./consultation.html">Consultation</a></li>
+                    <li><a href="./training.html">Training</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 social-media">
+                <ul class="list-icon">
+                    <li><a type="button" href="https://www.facebook.com/pinakin.shah.395?mibextid=ZbWKwL"><i
+                                class="fa fa-facebook-square"></i></a></li>
+                    <li><a type="button" href="https://wa.me/919821937240"><i class="fa fa-whatsapp"
+                                aria-hidden="true"></i></a></li>
+                    <li><a type="button" href="https://www.linkedin.com/in/pinakin-shah-63002235/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                    <li><a type="button" href="https://www.instagram.com/pshah.2328/profilecard/?igsh=MWJudWhxbWppajBiNw=="><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-end">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-9">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2024, <a href="index.html">PinakInMicro</a></p>
+                        <p>Developed & Managed By <span><a href="https://www.linkedin.com/in/jinish-varaiya-19aba6168/">Jinish Varaiya</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="./js/consult.js"></script>
+
+</html>

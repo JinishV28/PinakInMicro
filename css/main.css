@@ -1,0 +1,289 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Questrial';
+    src: url('../assets/fonts/Questrial/Questrial-Regular.ttf');
+}
+
+.html {
+    scroll-behavior: smooth;
+}
+
+.html,
+.body {
+    width: 100%;
+    overflow: hidden !important;
+}
+
+.body {
+    overflow-x: hidden !important;
+}
+
+/* .logo {
+    width: 100%;
+} */
+
+.navbar {
+    background-color: #005E67;
+    padding-bottom: 0;
+}
+
+.navbar .container {
+    margin-bottom: 2vh;
+}
+
+nav ul {
+    padding: 1%;
+}
+
+.navbar .btn {
+    background-color: white;
+    color: #0B3259;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.navbar-nav li a {
+    font-family: 'Poppins';
+    font-size: 0.9rem;
+    color: white;
+}
+
+.navbar-nav li a:hover {
+    color: #87DB1C;
+}
+
+/* .navbar-nav li a:hover {} */
+
+.slogan-container {
+    background-color: #3FA498;
+    width: 100%;
+    font-family: 'Poppins';
+    font-weight: 900;
+    font-style: italic;
+}
+
+.slogan-container p {
+    margin: 0 !important;
+    padding: 1vh 1vw;
+}
+
+.btn {
+    border: none;
+    border-radius: 300px;
+    font-family: 'Poppins';
+}
+
+.btn-default {
+    padding: 1.5vh 1.25vw;
+}
+
+.btn-submit {
+    background-color: #0B3259;
+    color: white;
+    width: 100px;
+}
+
+.btn-submit:hover, .btn-submit:focus {
+    background-color: #0B3259;
+    color: white;
+}
+
+.navbar li {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.title-banner {
+    background-color: #005E67;
+}
+
+.title-banner h1 {
+    font-family: 'Questrial';
+    padding: 2.5%;
+    text-align: center;
+    color: white;
+}
+
+.section {
+    margin: 10vh 2vw;
+    overflow-x: hidden !important;
+}
+
+.form-group {
+    margin: 2rem;
+}
+
+.need-support {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.need-support .btn {
+    background-color: #0B3259;
+    color: white;
+    margin-top: 10%;
+}
+
+.btn-consult {
+    background-color: #87DB1C;
+    color: #0B3259;
+    width: 150px;
+    margin-top: 3vh;
+}
+
+.btn-consult:hover, .btn-consult:focus {
+    background-color: #b2fe2e;
+    color: #0B3259;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0px 20px 0px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.contact-details {
+    padding: 2vh 0;
+    margin: 4vh 0;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.company-details {
+    margin: 2vh 0;
+}
+
+.company-details .logo {
+    margin-top: 5vh;
+}
+
+.abt-links li {
+    padding-bottom: 1vh;
+}
+
+.footer-end {
+    border-top: 0.5px solid rgba(255, 255, 255, 0.3);
+    border-top-style: ridge;
+    color: white;
+    font-size: large;
+    padding: 20px 0 0;
+}
+
+.footer-end a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-end a:hover {
+    color: #87DB1C;
+}
+
+footer a,
+footer p {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: #87DB1C;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-logo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ft-logo {
+    width: 80%;
+    /* height: 30%; */
+}
+
+.list-icon .fa {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.list-icon {
+    list-style-type: none;
+    text-decoration: none;
+    padding-left: 2.5vh;
+}
+
+.list-icon li {
+    display: inline-flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.fa-facebook-square:hover {
+    color: #2f2fff;
+}
+
+.fa-linkedin-square:hover {
+    color: #2291ff;
+}
+
+.fa-whatsapp:hover {
+    color: #87DB1C;
+}
+
+.fa-instagram:hover {
+    color: rgb(255, 90, 208);
+}
+
+.copyright-text {
+    padding-left: 2vh;
+}
+
+@media screen and (min-width: 992px) {
+    .slogan-container p {
+        padding: 2vh 2vw;
+    }
+
+    .need-support {
+        height: 60vh;
+    }
+
+    .section {
+        margin: 20vh 2vw;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .navbar-nav li a {
+        padding: 4%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .title-banner {
+        padding-top: 150px;
+    }
+
+    .need-support {
+        height: 50vh;
+    }
+
+    .section {
+        margin: 15vh 2vw;
+    }
+}

@@ -1,0 +1,301 @@
+body,
+html {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.banner {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(#00405498, #00405498), url('../assets/img/home/banner.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.banner h3 {
+  text-align: center;
+  display: flex;
+  margin: 10vh 0 5vh;
+  justify-content: center;
+  color: #fff;
+  /* font-size: 3.5em; */
+  font-size: 3em;
+  font-weight: 400;
+  font-family: 'Questrial', arial;
+}
+
+.banner p {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-banner {
+  background-color: #87DB1C;
+}
+
+.mouse-icon {
+  filter: invert(1);
+  height: 30px;
+}
+
+.mouse-icon:hover {
+  filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(80deg) brightness(90%);
+}
+
+.btn-banner:hover, .btn-banner:focus {
+  background-color: #b2fe2e;
+}
+
+.list-icon .fa {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.list-icon {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.list-icon li {
+  display: inline;
+  padding-right: 20px;
+}
+
+.fa-facebook-square:hover {
+  color: #2f2fff;
+}
+
+.fa-linkedin-square:hover {
+  color: #2291ff;
+}
+
+.fa-whatsapp:hover {
+  color: #87DB1C;
+}
+
+.fa-instagram:hover {
+  color: rgb(255, 90, 208);
+}
+
+.social-info, .scroll-down {
+  padding-bottom: 5vh;
+}
+
+.abt {
+  text-align: center;
+  color: #0B3259;
+}
+
+.abt .jumbotron {
+  background-color: #fff;
+}
+
+.abt h3 {
+  font-size: 1.5rem;
+  font-family: 'Questrial';
+}
+
+.founder-name {
+  font-size: 25px !important;
+  font-weight: 700 !important;
+  margin-top: 2vh;
+  margin-bottom: 0;
+}
+
+.abt-img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+.circular--portrait {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 1vw;
+  margin: 1.5vh 0;
+  padding: 1vh 3vw;
+
+}
+
+.card img {
+  width: 40px;
+}
+
+.card-body {
+  text-align: left;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.img-text-right {
+  text-align: left;
+}
+
+.our-services {
+  width: 100%;
+  background: linear-gradient(#0100126e, #00008076), url('../assets/img/home/our\ services.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+}
+
+.our-services h1 {
+  /* font-size: 5em; */
+  font-size: 3em;
+  color: #87DB1C;
+  text-align: center;
+  margin: 10vh 0;
+}
+
+.accordion {
+  background: transparent;
+
+  dt {
+    background: transparent;
+    font-size: larger;
+    padding: 10vh 0;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    transition: 0.1s;
+
+    span {
+      float: right;
+      transition: 0.2s;
+      opacity: 0.3;
+    }
+
+  }
+
+  dd {
+    display: none;
+    background-color: transparent;
+    text-align: justify;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 0;
+  }
+}
+
+dt:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+dt.expanded {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+dt.expanded span {
+  transform: rotate(90deg);
+  opacity: 1;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+
+.no-padding {
+  padding: 0;
+  margin-top: -30px;
+}
+
+.no-padding h1 {
+  padding-top: 55px;
+  text-transform: uppercase;
+}
+
+.no-padding hr {
+  border: 2px solid #d0d0d0;
+}
+
+.bg-dark {
+  background-color: #222222;
+  color: white;
+}
+
+.primary {
+  border: 1px solid #d35400;
+}
+
+.my-font {
+  font-size: 20px;
+
+}
+
+.bg-dark {
+  padding-top: 55px;
+  padding-bottom: 30px;
+}
+
+.padded {
+  padding-top: 200px;
+}
+
+.padded .col-lg-4 a {
+  color: #d35400;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .banner h3 {
+    margin: 20vh 0 5vh;
+    font-size: 3.5em;
+  }
+  .social-info {
+    padding-bottom: 10vh;
+  }
+
+  .scroll-down {
+    padding-bottom: 15vh;
+  }
+
+  .abt h3 {
+    font-size: 1.65rem;
+   }
+}
+
+@media screen and (min-width: 992px) {
+ .abt h3 {
+  font-size: 2rem;
+ }
+
+ .banner p {
+  font-size: 1.65em;
+ }
+
+ .list-icon .fa {
+  font-size: 1.65em;
+ }
+}

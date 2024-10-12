@@ -1,0 +1,84 @@
+.founder-img {
+    width: 100%;
+    height: 95%;
+}
+
+.abt-us {
+    color: #0B3259;
+    font-family: 'Questrial';
+}
+
+.abt-content {
+    font-weight: 900;
+}
+
+.founder-name {
+    font-size: 1.2em;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.more-abt {
+    width: 100%;
+    background: linear-gradient(#0100126e, #00008076), url('../assets/img/home/our\ services.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.more-abt h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #87DB1C;
+    padding-bottom: 5vh;
+}
+
+.more-abt p {
+    color: white;
+    text-align: justify;
+    padding: 2vh;
+}
+
+.more-abt-btn {
+    margin: 0 0.5vw;
+}
+
+.cv-btn {
+    width: 150px;
+    color: #0B3259;
+    background-color: rgb(225, 225, 225);
+    margin-right: 2vw;
+}
+
+.profile-btn {
+    width: 150px;
+    color: #0B3259;
+    background-color: #87DB1C;
+}
+
+.cv-btn:hover, .cv-btn:focus {
+    background-color: white;
+}
+
+.profile-btn:hover, .profile-btn:focus {
+    background-color: #9fff21;
+}
+
+@media screen and (min-width: 768px) {
+    .abt-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .abt-text {
+        line-height: 1.5;
+    }
+    .founder-name {
+        font-size: 1.5em;
+    }
+    .more-abt{
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+}

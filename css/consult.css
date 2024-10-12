@@ -1,0 +1,141 @@
+.consultation-intro {
+    overflow: hidden;
+}
+.consultation-intro h3 {
+    text-align: center;
+    color: #5EA603;
+    margin-bottom: 5vh;
+}
+
+.consultation-services {
+    background-color: #005e6751;
+}
+.other-services {
+    padding: 2vh;
+}
+
+.accordion{
+      background: white;
+    dt{
+      background: #005e6751;
+      padding: 10px;
+      color: #0B3259;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      user-select: none;
+      -webkit-user-select: none;
+    cursor: pointer;
+    transition: 0.1s;
+    &:hover{
+      background: darken(#005e6751, 7%);
+    }
+      span{
+          float: right;
+          transition: 0.2s;
+          opacity: 0.3;
+      }
+
+    }
+    dd{
+        display: none;
+        background-color: #005e6751;
+        padding: 10px;
+    margin: 0;
+    }
+}
+
+dt.expanded span{
+    transform: rotate(90deg);
+    opacity: 1;
+}
+
+.content{
+font-family: 'Helvetica', sans-serif;
+width: 550px;
+margin: 0 auto;
+
+}
+
+.carousel-item {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.carousel-inner {
+    padding-top: 4em;
+    margin-right: 2%;
+    padding-right: 2%;
+}
+
+.card {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.card:hover{
+    top: -15px;
+    color: white;
+    background-color: #0B3259;
+}
+
+.img-wrapper img{
+    width: 100%;
+    height: 200px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent;
+    color: #0B3259;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.carousel-control-prev {
+    left: -2%;
+}
+
+.carousel-control-next {
+    right: -2%;
+}
+
+@media screen and (min-width: 992px) {
+
+    .carousel-inner {
+        display: flex;
+    }
+
+    .carousel-item {
+        display: block;
+        padding: 0 1.5em;
+        margin-right: 0%;
+        flex: 0 0 calc(100%/3);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .carousel-inner {
+        display: flex;
+    }
+
+    .carousel-item {
+        display: block;
+        padding: 0 1.5em;
+        margin-right: 0%;
+        flex: 0 0 calc(100%/2);
+    }
+}
+
+@media (min-width: 220px) and (max-width: 768px) {
+    .carousel-control-prev {
+        left: -6%;
+    }
+    
+    .carousel-control-next {
+        right: -6%;
+    }
+}
