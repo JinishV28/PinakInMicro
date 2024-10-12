@@ -124,9 +124,11 @@ margin: 0 auto;
 
     .carousel-item {
         display: block;
-        padding: 0 1.5em;
-        margin-right: 0%;
-        flex: 0 0 calc(100%/2);
+        padding: 0 1em;
+        margin-right: 0;
+        flex: 1 0 calc(50% - 3em); /* Adjusting to ensure space for padding/margin */
+        /* Optional: Add box-sizing to include padding in width */
+        box-sizing: border-box;
     }
 }
 
