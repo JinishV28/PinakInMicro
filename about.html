@@ -6,7 +6,7 @@
     <title>About Us | PinakInMicro</title>
     <meta name="description" content="Pinakin Shah is a Global Microbiology leader with 30 years of experience
     in leading global FMCG">
-    <link rel="shortcut icon" href="./assets/img/favicon.png">
+    <link rel="shortcut icon" href="./assets/img/favicon.webp">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -49,15 +49,18 @@
                                 <label for="queryType">Select Query Type:</label>
                                 <div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="queryType" id="consultation" value="Consultation" onclick="updateDropdown()" checked required>
+                                        <input class="form-check-input" type="radio" name="queryType" id="consultation"
+                                            value="Consultation" onclick="updateDropdown()" checked required>
                                         <label class="form-check-label" for="consultation">Consultation</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="queryType" id="training" value="Training" onclick="updateDropdown()" required>
+                                        <input class="form-check-input" type="radio" name="queryType" id="training"
+                                            value="Training" onclick="updateDropdown()" required>
                                         <label class="form-check-label" for="training">Training</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="queryType" id="other" value="Other" onclick="showOtherInput()" required>
+                                        <input class="form-check-input" type="radio" name="queryType" id="other"
+                                            value="Other" onclick="showOtherInput()" required>
                                         <label class="form-check-label" for="other">Other</label>
                                     </div>
                                 </div>
@@ -82,17 +85,19 @@
                                     <option value="Microbiological Claims">Microbiological Claims</option>
                                 </select>
                             </div>
-                        </div>                        
+                        </div>
                         <div class="form-group row" id="otherInputContainer" style="display: none;">
                             <div class="col-12">
                                 <label for="otherSubject">Please specify your subject:</label>
-                                <input type="text" class="form-control" id="otherSubject" placeholder="Enter your subject">
+                                <input type="text" class="form-control" id="otherSubject"
+                                    placeholder="Enter your subject">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-12">
                                 <label for="message">Any Suggestions</label>
-                                <textarea class="form-control" name="message" id="message" rows="6" placeholder="Enter Your Comments/Suggestions Here (If Any)"></textarea>
+                                <textarea class="form-control" name="message" id="message" rows="6"
+                                    placeholder="Enter Your Comments/Suggestions Here (If Any)"></textarea>
                             </div>
                         </div>
                         <div id="notificationContainer" class="alert alert-success" style="display: none;" role="alert">
@@ -102,7 +107,7 @@
                             <div class="col-12">
                                 <button type="submit" class="btn btn-default btn-submit">Send</button>
                             </div>
-                        </div>            
+                        </div>
                     </form>
                 </div>
             </div>
@@ -110,7 +115,7 @@
     </div>
     <nav class="navbar navbar-dark navbar-expand-lg flex-column">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="./assets/img/Header-logo.png" alt="" height="60px"></a>
+            <a class="navbar-brand" href="index.html"><img src="./assets/img/Header-logo.webp" alt="" height="60px"></a>
             <!-- <a class="navbar-brand" href="#"><img src="img/ppt logo.webp" height="60" width="60"></a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
@@ -123,7 +128,8 @@
                     <li class="nav-item"><a class="nav-link" href="./training.html">Training</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
                 </ul>
-                <button class="btn btn-default d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                <button id="consultbtn" class="btn btn-default d-none d-lg-block" data-bs-toggle="modal"
+                    data-bs-target="#consultModal">Consult Now</button>
             </div>
         </div>
         <div class="slogan-container text-center d-none d-md-block">
@@ -136,16 +142,17 @@
     <div class="section abt-us">
         <div class="row">
             <div class="col-12 col-md-5 order-lg-2">
-                <img class="founder-img" src="./assets/img/about/Founder 1.jpg" alt="">
+                <img class="founder-img" src="./assets/img/about/Founder 1.webp" alt="">
             </div>
             <div class="col-12 col-md-7 order-1 abt-content">
-                <h2 class="abt-text">I launched PinakInMicro in 2024 <span style="color: #3FA498;">driven by my passion for microbiology,
-                    my desire to prevent microbiology related disruptions/flow</span> blockers in supply chain and
-                    laboratory operations.</h2>
+                <h2 class="abt-text">Driven by my passion for microbiology, my desire to prevent
+                    microbiology related disruptions/flow blockers in supply chain and laboratory operations, I launched
+                    <b>PinakInMicro</b> consultancy in Quarter four of 2024.
+                </h2>
                 <br>
                 <div class="abt-name">
                     <p class="founder-name">Pinakin Shah</p>
-                    <p>Founder</p>
+                    <p>Founder & Principal Consultant</p>
                 </div>
             </div>
         </div>
@@ -158,20 +165,24 @@
                     in leading global FMCG,
                     Medical, OTC, and Personal care product industry </span> having proven track record of value
                 creation through
-                Microbiological Excellence in Quality, R&D and Regulatory Compliance. He has a post graduate degree in
-                Microbiology from Haffkine Institute,Mumbai, India; and has undergone Business Management Development
-                Program at Asian Institute of Management (AIM), Manila, Phillipines. He has acquired expertise in US
-                FDA,EU and other regulatory compliance requirements (Zero 483 Observation in microbiology area during US
-                FDA audits), auditing for microbiology (Laboratories and manufacturing facilities), data integrity for
-                microbiology laboratory (DIRA), Rapid microbial methods for product release, <span
-                    style="color: #87DB1C;">Validation and monitoring
-                    of sterilization technologies (Steam, Gamma and EO), purified water system design and controls.
+                Microbiological Excellence in Quality, R&D and Regulatory Compliance. He has Masters in Microbiology
+                degree with Management Program from international Business school. He has acquired expertise in US
+                FDA,EU and other regulatory compliance requirements for microbiology operations,auditing for
+                microbiology (Laboratories and manufacturing facilities), data integrity for microbiology laboratory
+                (DIRA), contamination controls in manufacturing and laboratory operations, Rapid microbial methods for
+                product release, <span style="color: #87DB1C;">Validation and monitoring of sterilization technologies
+                    (Steam, Gamma and EO), purified
+                    water system design and controls etc.
                 </span>
             </p>
             <div class="row more-abt-btn">
                 <div class="col-12">
-                    <button class="btn cv-btn" onclick="window.open('https://drive.google.com/file/d/1RmG62Zo4sZxpEns9VssClri_szaFToFg/view?usp=sharing')">Pinakin's CV</button>
-                    <button class="btn profile-btn" onclick="window.open('https://drive.google.com/file/d/1UulmToEmIOS5avS6SSwh1AtHrECnXmJ6/view?usp=sharing')">Our Brochure</button>
+                    <button class="btn cv-btn"
+                        onclick="window.open('https://drive.google.com/file/d/1RmG62Zo4sZxpEns9VssClri_szaFToFg/view?usp=sharing')">Pinakin's
+                        CV</button>
+                    <button class="btn profile-btn"
+                        onclick="window.open('https://drive.google.com/file/d/1UulmToEmIOS5avS6SSwh1AtHrECnXmJ6/view?usp=sharing')">Our
+                        Brochure</button>
                 </div>
             </div>
         </div>
@@ -189,22 +200,22 @@
     <footer>
         <div class="row contact-details justify-content-center">
             <div class="col-12 col-md-3">
-                <p></p>+91-8369347927</p>
+                <p>+91-8369347927</p>
             </div>
             <div class="col-12 offset-md-1 col-md-2">
                 <p>Mumbai</p>
             </div>
             <div class="col-12 col-md-3">
-                <a href="mailto:consult@pinakinmicro.com">consult@pinakinmicro.com</a>
+                <p><a href="mailto:consult@pinakinmicro.com">consult@pinakinmicro.com</a></p>
             </div>
         </div>
         <div class="row justify-content-center company-details">
             <div class="col-12 col-md-3 footer-logo">
-                <img class="ft-logo" src="./assets/img/Logo.png" alt="">
+                <img class="ft-logo" src="./assets/img/Logo.webp" alt="">
                 <p>Transforming Mystery to Mastery</p>
             </div>
             <div class="col-12 offset-md-1 col-md-2 abt-links">
-                <h6>Links</h6>
+                <h5>Links</h5>
                 <ul class="list-unstyled">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./about.html">About Us</a></li>
@@ -215,12 +226,15 @@
             </div>
             <div class="col-12 col-md-3 social-media">
                 <ul class="list-icon">
-                    <li><a type="button" href="https://www.facebook.com/profile.php?id=61567009323516"><i
-                                class="fa fa-facebook-square"></i></a></li>
                     <li><a type="button" href="https://wa.me/918369347927 "><i class="fa fa-whatsapp"
                                 aria-hidden="true"></i></a></li>
-                    <li><a type="button" href="https://www.linkedin.com/in/pinakin-shah-63002235/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                    <li><a type="button" href="https://www.instagram.com/pinakinmicro/profilecard/?igsh=MTdwNjFnMGVtZnM4Mw=="><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a type="button" href="https://www.linkedin.com/in/pinakin-shah-63002235/"><i
+                                class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                    <li><a type="button" href="https://www.facebook.com/profile.php?id=61567009323516"><i
+                                class="fa fa-facebook-square"></i></a></li>
+                    <li><a type="button"
+                            href="https://www.instagram.com/pinakinmicro/profilecard/?igsh=MTdwNjFnMGVtZnM4Mw=="><i
+                                class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -229,7 +243,8 @@
                 <div class="col-12 col-md-9">
                     <div class="copyright-text">
                         <p>Copyright &copy; 2024, <a href="index.html">PinakInMicro</a></p>
-                        <p>Developed & Managed By <span><a href="https://wa.me/918591404962">Jinish Varaiya</a></span></p>
+                        <p>Developed & Managed By <span><a href="https://wa.me/918591404962">Jinish Varaiya</a></span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -239,5 +254,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
     crossorigin="anonymous"></script>
-
+<script src="./js/consultForm.js"></script>
 </html>

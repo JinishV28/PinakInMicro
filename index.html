@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | PinakInMicro</title>
     <meta name="description" content="Best Microbiology Consultancy By Pinakin Shah">
-    <link rel="shortcut icon" href="./assets/img/favicon.png">
+    <link rel="shortcut icon" href="./assets/img/favicon.webp">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -49,7 +49,7 @@
                                 <label for="queryType">Select Query Type:</label>
                                 <div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="queryType" id="consultation" value="Consultation" onclick="updateDropdown()" checked required>
+                                        <input class="form-check-input" type="radio" name="queryType" id="consultation" value="Consultation" onclick="updateDropdown()" required>
                                         <label class="form-check-label" for="consultation">Consultation</label>
                                     </div>
                                     <div class="form-check">
@@ -113,8 +113,7 @@
     <section class="banner">
         <nav class="navbar navbar-dark navbar-expand-lg flex-column" style="background-color: transparent;">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="./assets/img/Header-logo.png" alt="" height="60px"></a>
-                <!-- <a class="navbar-brand" href="#"><img src="img/ppt logo.webp" height="60" width="60"></a> -->
+                <a class="navbar-brand" href="index.html"><img src="./assets/img/Header-logo.webp" alt="" height="60px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -126,7 +125,7 @@
                         <li class="nav-item"><a class="nav-link" href="./training.html">Training</a></li>
                         <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
                     </ul>
-                    <button class="btn btn-default d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                    <button id="consultbtn" class="btn btn-default d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
                 </div>
             </div>
             <div class="slogan-container text-center d-none d-md-block">
@@ -143,11 +142,11 @@
             <div class="row social-info">
                 <div class="col-12 text-center">
                     <ul class="list-icon">
-                        <li><a type="button" href="https://www.facebook.com/profile.php?id=61567009323516"><i
-                                    class="fa fa-facebook-square"></i></a></li>
                         <li><a type="button" href="https://wa.me/918369347927 "><i class="fa fa-whatsapp"
                                     aria-hidden="true"></i></a></li>
                         <li><a type="button" href="https://www.linkedin.com/in/pinakin-shah-63002235/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                        <li><a type="button" href="https://www.facebook.com/profile.php?id=61567009323516"><i
+                            class="fa fa-facebook-square"></i></a></li>
                         <li><a type="button" href="https://www.instagram.com/pinakinmicro/profilecard/?igsh=MTdwNjFnMGVtZnM4Mw=="><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
@@ -163,20 +162,20 @@
     <div class="abt section" id="about">
         <div class="jumbotron">
             <h3>Driven by my passion for microbiology, my desire to prevent <br> microbiology related
-                disruptions/flow blockers in supply chain and laboratory operations, I launched “PinakInMicro”
+                disruptions/flow blockers in supply chain and laboratory operations, I launched <b>PinakInMicro</b>
                 consultancy</h3>
             <br>
             <center>
-                <div class="circular--portrait"> <img src="./assets/img/home/Pinakin profile img.jpg" /> </div>
+                <div class="circular--portrait"> <img src="./assets/img/home/Pinakin profile img.webp" /> </div>
             </center>
             <p class="founder-name">Pinakin Shah</p>
-            <p>Founder</p>
+            <p>Founder & Principal Consultant</p>
                 <!-- <a href="#portfolio" class="btn btn-default">Get Started!</a> -->
         </div>
         <div class="section">
             <div class="row">
                 <div class="col-md-5 d-none d-md-block">
-                    <img class="abt-img" src="./assets/img/home/about section.jpg" alt="">
+                    <img class="abt-img" src="./assets/img/home/about section.webp" alt="">
                 </div>
                 <div class="col-12 col-md-7">
                     <div class="card">
@@ -190,28 +189,28 @@
                         <img src="./assets/img/home/fx.svg" class="card-img-top img-thumbnail">
                         <div class="card-body">
                           <h6 class="card-title">Risk level-based assessment programs for Formulations and Raw materials</h6>
-                          <p class="card-text d-none d-lg-block">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p class="card-text d-none d-lg-block">Developed science-based models for assessing microbiological risk of raw materials and formulations.</p>
                         </div>
                     </div>
                     <div class="card">
                         <img src="./assets/img/home/certificate 1.svg" class="card-img-top img-thumbnail">
                         <div class="card-body">
                           <h6 class="card-title">US FDA (with Zero 483 Observation)</h6>
-                          <p class="card-text d-none d-lg-block">Led three consecutive successful certification/accreditation of Microbiology laboratory for US FDA (with Zero 483 Observation).Conducted microbiological GMP audits for mfg sites, laboratories and suppliers at multiple countries in APAC region.</p>
+                          <p class="card-text d-none d-lg-block">Led three consecutive successful certification/accreditation of Microbiology laboratory for US FDA (with Zero 483 Observation).Conducted microbiological GMP audits for manufacturing sites, laboratories and suppliers globally.</p>
                         </div>
                     </div>
                     <div class="card">
                         <img src="./assets/img/home/medal.svg" class="card-img-top img-thumbnail">
                         <div class="card-body">
-                          <h6 class="card-title">Identified causes for complex failures in APAC region</h6>
-                          <p class="card-text d-none d-lg-block">Investigated and identified correct root causes for complex failures/contamination issues in manufacturing sites of APAC region.</p>
+                          <h6 class="card-title">Identified causes and action plans for challenging contamination issues</h6>
+                          <p class="card-text d-none d-lg-block">Investigated and identified root causes for challenging  failures/contamination issues in manufacturing plants and raw material suppliers at Global level.</p>
                         </div>
                     </div>
                     <div class="card">
                         <img src="./assets/img/home/certificate 2.svg" class="card-img-top img-thumbnail">
                         <div class="card-body">
-                          <h6 class="card-title">Partnered with Regulatory bodies (USP,ISO, etc)</h6>
-                          <p class="card-text d-none d-lg-block">Collaborated and Partnered with Regulatory bodies e.g USP, ISO, BIS,Chp etc (Represented India in ISO meeting) to design microbiological standards.</p>
+                          <h6 class="card-title">Partnered with Regulatory bodies</h6>
+                          <p class="card-text d-none d-lg-block">Collaborated and Partnered with Regulatory bodies e.g USP, ISO, BIS, Chinese Pharmacopeia etc to create microbiological standards.</p>
                         </div>
                     </div>
                 </div>
@@ -228,12 +227,12 @@
                     <dl class="accordion collapsable">
                         <dt>Consultancy<span>&#x2B95;</span></dt>
                         <dd>PinakInMicro offers consultancy in microbiology design robustness, Audits and inspections, Investigations, Rapid methods, Contamination controls and Quality Systems for microbiology. <br>
-                            <button class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                            <button id="consultbtn" class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
                         </dd>
     
                         <dt>Training<span>&#x2B95;</span></dt>
                         <dd>PinakInMicro offers customized Quality and R&D Microbiology trainings to meet your unique needs. Webinars, workshops and training classes on formulation risk assessment, RM risk assessment, data integrity and compliance in microbiology laboratory operations, Rapid microbial methods, objectionable organism assessment, Microbiological stability testing and method validation, environmental monitoring are few examples of trainings which we can offer. <br>
-                            <button class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                            <button id="trainingbtn" class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
                         </dd>
                     </dl>
                 </div>
@@ -253,22 +252,22 @@
     <footer>
         <div class="row contact-details justify-content-center">
             <div class="col-12 col-md-3">
-                <p></p>+91-8369347927</p>
+                <p>+91-8369347927</p>
             </div>
             <div class="col-12 offset-md-1 col-md-2">
                 <p>Mumbai</p>
             </div>
             <div class="col-12 col-md-3">
-                <a href="mailto:consult@pinakinmicro.com">consult@pinakinmicro.com</a>
+                <p><a href="mailto:consult@pinakinmicro.com">consult@pinakinmicro.com</a></p>
             </div>
         </div>
         <div class="row justify-content-center company-details">
             <div class="col-12 col-md-3 footer-logo">
-                <img class="ft-logo" src="./assets/img/Logo.png" alt="">
+                <img class="ft-logo" src="./assets/img/Logo.webp" alt="">
                 <p>Transforming Mystery to Mastery</p>
             </div>
             <div class="col-12 offset-md-1 col-md-2 abt-links">
-                <h6>Links</h6>
+                <h5>Links</h5>
                 <ul class="list-unstyled">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./about.html">About Us</a></li>
@@ -279,11 +278,11 @@
             </div>
             <div class="col-12 col-md-3 social-media">
                 <ul class="list-icon">
-                    <li><a type="button" href="https://www.facebook.com/profile.php?id=61567009323516"><i
-                                class="fa fa-facebook-square"></i></a></li>
                     <li><a type="button" href="https://wa.me/918369347927 "><i class="fa fa-whatsapp"
                                 aria-hidden="true"></i></a></li>
                     <li><a type="button" href="https://www.linkedin.com/in/pinakin-shah-63002235/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                    <li><a type="button" href="https://www.facebook.com/profile.php?id=61567009323516"><i
+                        class="fa fa-facebook-square"></i></a></li>
                     <li><a type="button" href="https://www.instagram.com/pinakinmicro/profilecard/?igsh=MTdwNjFnMGVtZnM4Mw=="><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 </ul>
             </div>

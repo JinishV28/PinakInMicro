@@ -1,3 +1,12 @@
+document.getElementById("consultbtn").addEventListener("click", function() {
+    document.getElementById("consultation").checked = true;
+});
+
+// Add event listener for the "Training" button
+document.getElementById("trainingbtn").addEventListener("click", function() {
+    document.getElementById("training").checked = true;
+});
+
 function submitForm(event) {
     event.preventDefault();
 

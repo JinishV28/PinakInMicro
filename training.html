@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Training| PinakInMicro</title>
     <meta name="description" content="We provide offline training, workshops & webinars">
-    <link rel="shortcut icon" href="./assets/img/favicon.png">
+    <link rel="shortcut icon" href="./assets/img/favicon.webp">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -109,7 +109,7 @@
     </div>
     <nav class="navbar navbar-dark navbar-expand-lg flex-column">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="./assets/img/Header-logo.png" alt="" height="60px"></a>
+            <a class="navbar-brand" href="index.html"><img src="./assets/img/Header-logo.webp" alt="" height="60px"></a>
             <!-- <a class="navbar-brand" href="#"><img src="img/ppt logo.webp" height="60" width="60"></a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
@@ -122,7 +122,7 @@
                     <li class="nav-item"><a class="nav-link" href="./training.html">Training</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
                 </ul>
-                <button class="btn btn-default d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                <button id="consultbtn" class="btn btn-default d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
             </div>
         </div>
         <div class="slogan-container text-center d-none d-md-block">
@@ -137,7 +137,7 @@
             <div class="col-12 col-md-10">
                 <div class="tab-container">
                     <div class="tab">
-                        <a class="tablinks active" onclick="openCity(event, 'offline')">Offline</a>
+                        <a class="tablinks active" onclick="openCity(event, 'onsite')">Onsite</a>
                         <a class="tablinks" onclick="openCity(event, 'workshops')">Workshops</a>
                         <a class="tablinks" onclick="openCity(event, 'webinars')">Webinars</a>
                     </div>
@@ -145,13 +145,12 @@
                     <div id="offline" class="tabcontent" style="display: block;">
                         <div class="row">
                             <div class="col-12 col-md-5 order-md-2">
-                                <img class="training-img" src="./assets/img/training/offline training.jpg" alt="">
+                                <img class="training-img" src="./assets/img/training/offline training.webp" alt="">
                             </div>
                             <div class="col-12 col-md-7 order-1 abt-content">
-                                <h3>Offline Training</h3>
+                                <h3>Onsite Training</h3>
                                 <p>Can be customized and organized based on needs.</p>
-                                <p><b>Instructor Name: </b>Pinakin Shah</p>
-                                <button class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Register Now</button>
+                                <button id="trainingbtn" class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Register Now</button>
                             </div>
                         </div>
                     </div>
@@ -159,14 +158,14 @@
                     <div id="workshops" class="tabcontent">
                         <div class="row">
                             <div class="col-12 col-md-5 order-md-2">
-                                <img class="training-img" src="./assets/img/training/workshops.jpg" alt="">
+                                <img class="training-img" src="./assets/img/training/workshops.webp" alt="">
                             </div>
                             <div class="col-12 col-md-7 order-1 abt-content">
                                 <h3>Workshops</h3>
                                 <p>-Microbiological  testing operations <br>-Rapid microbiology methods 
                                 </p>
-                                <p><b>Instructor Name: </b>Pinakin Shah</p>
-                                <button class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Register Now</button>
+                                <h4>Coming Soon</h4>
+                                <!-- <button class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Register Now</button> -->
                             </div>
                         </div>
                     </div>
@@ -174,7 +173,7 @@
                     <div id="webinars" class="tabcontent">
                         <div class="row">
                             <div class="col-12 col-md-5 order-lg-2">
-                                <img class="training-img" src="./assets/img/training/webinars.jpg" alt="">
+                                <img class="training-img" src="./assets/img/training/webinars.webp" alt="">
                             </div>
                             <div class="col-12 col-md-7 order-1 abt-content">
                                 <h3>Webinars</h3>
@@ -185,8 +184,8 @@
                                      assessment <br>
                                     -Microbiological claims
                                 </p>
-                                <p><b>Instructor Name: </b>Pinakin Shah</p>
-                                <button class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Register Now</button>
+                                <h4>Coming Soon</h4>
+                                <!-- <button class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Register Now</button> -->
                             </div>
                         </div>
                     </div>
@@ -198,7 +197,7 @@
     <div class="background-img jumbotron">
         <div class="row">
             <!-- <div class="col-12"> -->
-                <img src="./assets/img/training/virus.jpg" alt="">
+                <img src="./assets/img/training/virus.webp" alt="">
             </div>
         </div>
     </div>
@@ -214,22 +213,22 @@
     <footer>
         <div class="row contact-details justify-content-center">
             <div class="col-12 col-md-3">
-                <p></p>+91-8369347927</p>
+                <p>+91-8369347927</p>
             </div>
             <div class="col-12 offset-md-1 col-md-2">
                 <p>Mumbai</p>
             </div>
             <div class="col-12 col-md-3">
-                <a href="mailto:consult@pinakinmicro.com">consult@pinakinmicro.com</a>
+                <p><a href="mailto:consult@pinakinmicro.com">consult@pinakinmicro.com</a></p>
             </div>
         </div>
         <div class="row justify-content-center company-details">
             <div class="col-12 col-md-3 footer-logo">
-                <img class="ft-logo" src="./assets/img/Logo.png" alt="">
+                <img class="ft-logo" src="./assets/img/Logo.webp" alt="">
                 <p>Transforming Mystery to Mastery</p>
             </div>
             <div class="col-12 offset-md-1 col-md-2 abt-links">
-                <h6>Links</h6>
+                <h5>Links</h5>
                 <ul class="list-unstyled">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./about.html">About Us</a></li>
@@ -240,11 +239,11 @@
             </div>
             <div class="col-12 col-md-3 social-media">
                 <ul class="list-icon">
-                    <li><a type="button" href="https://www.facebook.com/profile.php?id=61567009323516"><i
-                                class="fa fa-facebook-square"></i></a></li>
                     <li><a type="button" href="https://wa.me/918369347927 "><i class="fa fa-whatsapp"
                                 aria-hidden="true"></i></a></li>
                     <li><a type="button" href="https://www.linkedin.com/in/pinakin-shah-63002235/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                    <li><a type="button" href="https://www.facebook.com/profile.php?id=61567009323516"><i
+                        class="fa fa-facebook-square"></i></a></li>
                     <li><a type="button" href="https://www.instagram.com/pinakinmicro/profilecard/?igsh=MTdwNjFnMGVtZnM4Mw=="><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
@@ -270,4 +269,5 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
     crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="./js/consultForm.js"></script>
 <script src="./js/training.js"></script>

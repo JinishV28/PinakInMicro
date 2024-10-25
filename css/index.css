@@ -1,11 +1,10 @@
-body,
-html {
+.abt, .our-services {
   font-family: 'Josefin Sans', sans-serif;
 }
 
 .banner {
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(#00405498, #00405498), url('../assets/img/home/banner.jpg') no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(#00405498, #00405498), url('../assets/img/home/banner.webp') no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 600px;
@@ -156,10 +155,10 @@ html {
 
 .our-services {
   width: 100%;
-  background: linear-gradient(#0100126e, #00008076), url('../assets/img/home/our\ services.jpg') no-repeat;
+  background: linear-gradient(#0100126e, #00008076), url('../assets/img/home/our\ services.webp') no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 600px;
+  min-height: 550px;
 }
 
 .our-services h1 {
@@ -176,7 +175,7 @@ html {
   dt {
     background: transparent;
     font-size: larger;
-    padding: 10vh 0;
+    padding: 5vh 0;
     color: white;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     user-select: none;
