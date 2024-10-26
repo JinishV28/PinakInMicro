@@ -33,27 +33,46 @@ $('.accordion dt').on('click', function(){
 
 //Event Carousel Java Script
 var multipleCardCarousel = document.querySelector("#eventCarousel");
-var carouselWidth = $('.carousel-inner')[0].scrollWidth;
+var carouselInner = $('.carousel-inner');
+var carouselWidth = carouselInner[0].scrollWidth;
 var cardWidth = $('.carousel-item').width();
-
 var scrollPosition = 0;
+
+function updateArrows() {
+    // Check if at the beginning
+    if (scrollPosition <= 0) {
+        $('.carousel-control-prev').hide();
+    } else {
+        $('.carousel-control-prev').show();
+    }
+    
+    // Check if at the end
+    if (scrollPosition >= carouselWidth - cardWidth * 4) {
+        $('.carousel-control-next').hide();
+    } else {
+        $('.carousel-control-next').show();
+    }
+}
+
+// Initial check to hide arrows appropriately
+updateArrows();
 
 if (window.matchMedia("(min-width: 991.5px)").matches) {
     $('.carousel-control-next').on('click', function () {
         if (scrollPosition < carouselWidth - cardWidth * 4) {
             scrollPosition = scrollPosition + cardWidth + 50;
-            $('.carousel-inner').animate({ scrollLeft: scrollPosition }, 600);
+            carouselInner.animate({ scrollLeft: scrollPosition }, 600);
         }
+        updateArrows(); // Update arrow visibility after each move
     });
 
     $('.carousel-control-prev').on('click', function () {
         if (scrollPosition > 0) {
             scrollPosition = scrollPosition - cardWidth - 50;
-            $('.carousel-inner').animate({ scrollLeft: scrollPosition }, 600);
+            carouselInner.animate({ scrollLeft: scrollPosition }, 600);
         }
+        updateArrows(); // Update arrow visibility after each move
     });
-}
-
-else {
+} else {
     $(multipleCardCarousel).addClass("slide");
 }
