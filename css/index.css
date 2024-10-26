@@ -185,8 +185,11 @@
 
     span {
       float: right;
+      font-size: 22px;
       transition: 0.2s;
-      opacity: 0.6;
+      background-color: #87DB1C;
+      border-radius: 50%;
+      padding: 3px 8px;
     }
 
   }
@@ -213,7 +216,7 @@ dt.expanded {
 
 dt.expanded span {
   transform: rotate(90deg);
-  opacity: 1;
+  background-color: #b2fe2e;
 }
 
 /* Style the collapsible content. Note: hidden by default */

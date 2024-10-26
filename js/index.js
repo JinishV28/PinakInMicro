@@ -1,3 +1,7 @@
+document.getElementById("trainingbtn").addEventListener("click", function() {
+    document.getElementById("training").checked = true;
+});
+
 var speed = 200 
 $('.accordion dt.expanded + dd').slideDown(speed)
 

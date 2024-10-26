@@ -1,3 +1,7 @@
+document.getElementById("trainingbtn").addEventListener("click", function() {
+  document.getElementById("training").checked = true;
+});
+
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");

@@ -8,6 +8,7 @@
     <meta name="description" content="Best Microbiology Consultancy By Pinakin Shah">
     <link rel="shortcut icon" href="./assets/img/favicon.webp">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -35,13 +36,17 @@
                         <div class="form-group row">
                             <div class="col-12 col-md-6">
                                 <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Enter email" required>
+                                <input type="email" class="form-control"
+                                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" id="exampleInputEmail1"
+                                    placeholder="Enter Your Email" required>
                             </div>
+                            <br><br><br>
                             <div class="col-12 col-md-6">
                                 <label for="phoneno">Contact Number</label>
-                                <input type="number" class="form-control" id="phoneno" aria-describedby="emailHelp"
-                                    placeholder="Enter Number">
+                                <br>
+                                <input type="tel" id="phoneno" class="form-control" placeholder="Enter Your Phone No." style="width: 100%;" required>
+                                <br>
+                                <span id="phoneError" style="color: red; display: none;">Invalid phone number</span>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -225,12 +230,12 @@
             <div class="row justify-content-center">
                 <div class="col-11">
                     <dl class="accordion collapsable">
-                        <dt>Consultancy<span>&#x2B95;</span></dt>
+                        <dt>Consultancy<span>&#x2192;</span></dt>
                         <dd>PinakInMicro offers consultancy in microbiology design robustness, Audits and inspections, Investigations, Rapid methods, Contamination controls and Quality Systems for microbiology. <br>
                             <button id="consultbtn" class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
                         </dd>
     
-                        <dt>Training<span>&#x2B95;</span></dt>
+                        <dt>Training<span>&#x2192;</span></dt>
                         <dd>PinakInMicro offers customized Quality and R&D Microbiology trainings to meet your unique needs. Webinars, workshops and training classes on formulation risk assessment, RM risk assessment, data integrity and compliance in microbiology laboratory operations, Rapid microbial methods, objectionable organism assessment, Microbiological stability testing and method validation, environmental monitoring are few examples of trainings which we can offer. <br>
                             <button id="trainingbtn" class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
                         </dd>
@@ -306,6 +311,8 @@
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/consultForm.js"></script>
 </body>

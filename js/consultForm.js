@@ -3,8 +3,24 @@ document.getElementById("consultbtn").addEventListener("click", function() {
 });
 
 // Add event listener for the "Training" button
-document.getElementById("trainingbtn").addEventListener("click", function() {
-    document.getElementById("training").checked = true;
+
+const phoneInputField = document.querySelector("#phoneno");
+    const phoneError = document.getElementById("phoneError");
+
+    const iti = window.intlTelInput(phoneInputField, {
+        initialCountry: "in", // Set default to India
+        separateDialCode: true, // Displays country code separately
+        preferredCountries: ["in", "us", "gb"], // Customize this as needed
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" // Provides formatting/validation utils
+    });
+
+// Validate phone number on input
+phoneInputField.addEventListener("input", () => {
+    if (iti.isValidNumber()) {
+        phoneError.style.display = "none"; // Hide error if valid
+    } else {
+        phoneError.style.display = "inline"; // Show error if invalid
+    }
 });
 
 function submitForm(event) {
