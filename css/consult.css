@@ -1,6 +1,7 @@
 .consultation-intro {
     overflow: hidden;
 }
+
 .consultation-intro h3 {
     text-align: center;
     color: #5EA603;
@@ -10,51 +11,57 @@
 .consultation-services {
     background-color: #005e6751;
 }
+
 .other-services {
     padding: 2vh;
 }
 
-.accordion{
-      background: white;
-    dt{
-      background: #005e6751;
-      padding: 10px;
-      color: #0B3259;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-      user-select: none;
-      -webkit-user-select: none;
-    cursor: pointer;
-    transition: 0.1s;
-    &:hover{
-      background: darken(#005e6751, 7%);
-    }
-      span{
-          position: relative;
-          display: inline-block;
-          margin-left: 15px;
-          transition: 0.2s;
-          opacity: 0.5;
-          font-size: 20px;
-      }
+.accordion {
+    background: white;
 
+    dt {
+        background: #005e6751;
+        padding: 10px;
+        color: #0B3259;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        user-select: none;
+        -webkit-user-select: none;
+        cursor: pointer;
+        transition: 0.1s;
+
+        &:hover {
+            background: darken(#005e6751, 7%);
+        }
+
+        span {
+            float: right;
+            font-size: 20px;
+            color: #0B3259;
+
+            &::before {
+                content: "\002B";
+            }
+        }
     }
-    dd{
+
+    dd {
         display: none;
         background-color: #005e6751;
         padding: 10px;
-    margin: 0;
+        margin: 0;
     }
 }
 
-dt.expanded span{
-    transform: rotate(90deg);
-    opacity: 1;
+dt.expanded span {  
+    &::before {
+        content: "\2212";
+    }
 }
 
-.content{
-font-family: 'Helvetica', sans-serif;
-width: 550px;
-margin: 0 auto;
+.content {
+    font-family: 'Helvetica', sans-serif;
+    width: 550px;
+    margin: 0 auto;
 
 }
 
@@ -75,27 +82,33 @@ margin: 0 auto;
     transition: top ease 0.5s;
 }
 
-.card:hover{
+.card:hover {
     top: -15px;
     color: white;
     background-color: #0B3259;
 }
 
-.img-wrapper img{
+.card-body img {
     width: 100%;
     height: 200px;
+    border-radius: 20px;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    background-color: transparent;
     color: #0B3259;
+    opacity: 1;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
+    font-size: 2em;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: #0B3259;
 }
 
 .carousel-control-prev {
@@ -129,7 +142,8 @@ margin: 0 auto;
         display: block;
         padding: 0 1em;
         margin-right: 0;
-        flex: 1 0 calc(50% - 3em); /* Adjusting to ensure space for padding/margin */
+        flex: 1 0 calc(50% - 3em);
+        /* Adjusting to ensure space for padding/margin */
         /* Optional: Add box-sizing to include padding in width */
         box-sizing: border-box;
     }
@@ -139,7 +153,7 @@ margin: 0 auto;
     .carousel-control-prev {
         left: -6%;
     }
-    
+
     .carousel-control-next {
         right: -6%;
     }
