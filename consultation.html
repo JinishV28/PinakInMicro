@@ -45,7 +45,8 @@
                             <div class="col-12 col-md-6">
                                 <label for="phoneno">Contact Number</label>
                                 <br>
-                                <input type="tel" id="phoneno" class="form-control" placeholder="Enter Your Phone No." style="width: 100%;" required>
+                                <input type="tel" id="phoneno" class="form-control" placeholder="Enter Your Phone No."
+                                    style="width: 100%;" required>
                                 <br>
                                 <span id="phoneError" style="color: red; display: none;">Invalid phone number</span>
                             </div>
@@ -55,15 +56,18 @@
                                 <label for="queryType">Select Query Type:</label>
                                 <div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="queryType" id="consultation" value="Consultation" onclick="updateDropdown()" required>
+                                        <input class="form-check-input" type="radio" name="queryType" id="consultation"
+                                            value="Consultation" onclick="updateDropdown()" required>
                                         <label class="form-check-label" for="consultation">Consultation</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="queryType" id="training" value="Training" onclick="updateDropdown()" required>
+                                        <input class="form-check-input" type="radio" name="queryType" id="training"
+                                            value="Training" onclick="updateDropdown()" required>
                                         <label class="form-check-label" for="training">Training</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="queryType" id="other" value="Other" onclick="showOtherInput()" required>
+                                        <input class="form-check-input" type="radio" name="queryType" id="other"
+                                            value="Other" onclick="showOtherInput()" required>
                                         <label class="form-check-label" for="other">Other</label>
                                     </div>
                                 </div>
@@ -88,17 +92,19 @@
                                     <option value="Microbiological Claims">Microbiological Claims</option>
                                 </select>
                             </div>
-                        </div>                        
+                        </div>
                         <div class="form-group row" id="otherInputContainer" style="display: none;">
                             <div class="col-12">
                                 <label for="otherSubject">Please specify your subject:</label>
-                                <input type="text" class="form-control" id="otherSubject" placeholder="Enter your subject">
+                                <input type="text" class="form-control" id="otherSubject"
+                                    placeholder="Enter your subject">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-12">
                                 <label for="message">Any Suggestions</label>
-                                <textarea class="form-control" name="message" id="message" rows="6" placeholder="Enter Your Comments/Suggestions Here (If Any)"></textarea>
+                                <textarea class="form-control" name="message" id="message" rows="6"
+                                    placeholder="Enter Your Comments/Suggestions Here (If Any)"></textarea>
                             </div>
                         </div>
                         <div id="notificationContainer" class="alert alert-success" style="display: none;" role="alert">
@@ -108,7 +114,7 @@
                             <div class="col-12">
                                 <button type="submit" class="btn btn-default btn-submit">Send</button>
                             </div>
-                        </div>            
+                        </div>
                     </form>
                 </div>
             </div>
@@ -130,7 +136,8 @@
                     <li class="nav-item"><a class="nav-link" href="./training.html">Training</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
                 </ul>
-                <button id="consultbtn" class="btn btn-default d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                <button id="consultbtn" class="btn btn-default d-none d-lg-block" data-bs-toggle="modal"
+                    data-bs-target="#consultModal">Consult Now</button>
             </div>
         </div>
         <div class="slogan-container text-center d-none d-md-block">
@@ -151,35 +158,35 @@
             <div class="col-12 col-md-10">
                 <dl class="accordion collapsable">
                     <dt>Audits & Inspections<span></span></dt>
-                    <dd>Preparing laboratory and facilities for Regulatory and Quality Compliance 
+                    <dd>Preparing laboratory and facilities for Regulatory and Quality Compliance
                         audits/inspections</dd>
 
                     <dt>Speed to Markets<span></span></dt>
-                    <dd>Microbiological controls in manufacturing and releasing quality products rapidly 
+                    <dd>Microbiological controls in manufacturing and releasing quality products rapidly
                         (Rapid Microbiological methods, PAT, Parametric releases) to the markets.</dd>
 
                     <dt>Design robustness assessments<span></span></dt>
-                    <dd>Scientific risk model-based assessment of manufacturing facili
-                        ties, formulations, Raw materials and packaging materials</dd>
+                    <dd>Scientific risk model-based assessment of manufacturing facilities, formulations, Raw materials
+                        and packaging materials</dd>
 
                     <dt>Failure Investigations & resolutions<span></span></dt>
-                    <dd>Marketed Product failure investigations, CAPA and risk 
+                    <dd>Marketed Product failure investigations, CAPA and risk
                         assessment for Objectionable organisms</dd>
 
                     <dt>Training & coaching<span></span></dt>
-                    <dd>Prepare teams and organization for Lab of the future/future generation of 
+                    <dd>Prepare teams and organization for Lab of the future/future generation of
                         Microbiologists</dd>
 
                     <dt>Claims substantiation<span></span></dt>
-                    <dd>Creating and supporting new Microbiological claims on the products 
+                    <dd>Creating and supporting new Microbiological claims on the products
                         (including claims for prebiotics, probiotics, preservative free)</dd>
-                    
+
                     <dt>Sterilization process controls<span></span></dt>
-                    <dd> Microbiological Qualification of sterilization processes for Steam, 
+                    <dd> Microbiological Qualification of sterilization processes for Steam,
                         Gamma,Ethylene oxide etc.</dd>
 
                     <dt>Laboratory processes & QMS<span></span></dt>
-                    <dd> Establishing laboratory and Microbiological Quality Management 
+                    <dd> Establishing laboratory and Microbiological Quality Management
                         Systems (QMS) for greenfield projects.</dd>
 
                     <dt>Data Integrity risk assessment & contamination control strategies<span></span></dt>
@@ -205,7 +212,8 @@
                                 <p>Protocol preparation for validation, Qualification, Microbiological studies etc.</p>
                                 <img src="./assets/img/consult/protocol.webp">
                                 <div class="row justify-content-center">
-                                    <button id="consultbtn" class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                                    <button id="consultbtn" class="btn btn-default btn-consult" data-bs-toggle="modal"
+                                        data-bs-target="#consultModal">Consult Now</button>
                                 </div>
                             </div>
                         </div>
@@ -217,7 +225,8 @@
                                 <p>Microbiological data and Report review</p>
                                 <img src="./assets/img/consult/microbiology.webp">
                                 <div class="row justify-content-center">
-                                    <button id="consultbtn" class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                                    <button id="consultbtn" class="btn btn-default btn-consult" data-bs-toggle="modal"
+                                        data-bs-target="#consultModal">Consult Now</button>
                                 </div>
                             </div>
                         </div>
@@ -229,7 +238,8 @@
                                 <p>Report preparation from the raw data</p>
                                 <img src="./assets/img/consult/report.webp">
                                 <div class="row justify-content-center">
-                                    <button id="consultbtn" class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                                    <button id="consultbtn" class="btn btn-default btn-consult" data-bs-toggle="modal"
+                                        data-bs-target="#consultModal">Consult Now</button>
                                 </div>
                             </div>
                         </div>
@@ -238,10 +248,12 @@
                     <div class="carousel-item">
                         <div class="card">
                             <div class="card-body">
-                                <p>Organize fit for purpose accredited  CRO/Testing laboratories for specialized needs on Microbiology</p>
+                                <p>Organize fit for purpose accredited CRO/Testing laboratories for specialized needs on
+                                    Microbiology</p>
                                 <img src="./assets/img/consult/lab.webp">
                                 <div class="row justify-content-center">
-                                    <button id="consultbtn" class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                                    <button id="consultbtn" class="btn btn-default btn-consult" data-bs-toggle="modal"
+                                        data-bs-target="#consultModal">Consult Now</button>
                                 </div>
                             </div>
                         </div>
@@ -253,7 +265,8 @@
                                 <p>Creating training modules and competency assessment plan</p>
                                 <img src="./assets/img/consult/training module.webp">
                                 <div class="row justify-content-center">
-                                    <button id="consultbtn" class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                                    <button id="consultbtn" class="btn btn-default btn-consult" data-bs-toggle="modal"
+                                        data-bs-target="#consultModal">Consult Now</button>
                                 </div>
                             </div>
                         </div>
@@ -312,10 +325,13 @@
                 <ul class="list-icon">
                     <li><a type="button" href="https://wa.me/918369347927 "><i class="fa fa-whatsapp"
                                 aria-hidden="true"></i></a></li>
-                    <li><a type="button" href="https://www.linkedin.com/in/pinakin-shah-63002235/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                    <li><a type="button" href="https://www.linkedin.com/in/pinakin-shah-63002235/"><i
+                                class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
                     <li><a type="button" href="https://www.facebook.com/profile.php?id=61567009323516"><i
-                        class="fa fa-facebook-square"></i></a></li>
-                    <li><a type="button" href="https://www.instagram.com/pinakinmicro/profilecard/?igsh=MTdwNjFnMGVtZnM4Mw=="><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                class="fa fa-facebook-square"></i></a></li>
+                    <li><a type="button"
+                            href="https://www.instagram.com/pinakinmicro/profilecard/?igsh=MTdwNjFnMGVtZnM4Mw=="><i
+                                class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -324,7 +340,8 @@
                 <div class="col-12 col-md-9">
                     <div class="copyright-text">
                         <p>Copyright &copy; 2024, <a href="index.html">PinakInMicro</a></p>
-                        <p>Developed & Managed By <span><a href="https://wa.me/918591404962">Jinish Varaiya</a></span></p>
+                        <p>Developed & Managed By <span><a href="https://wa.me/918591404962">Jinish Varaiya</a></span>
+                        </p>
                     </div>
                 </div>
             </div>
