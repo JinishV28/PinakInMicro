@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/index.css">
-    <script async defer src="https://engagely.onrender.com/tracker.js" data-website-id="cmkv7h5im0001k8x38r2v3g86"></script>
+    <script>
+        window.TRACKER_KEY = "trk_live_-6SCdNyVg...";
+        window.TRACKER_ID = "33103ffe-8868-4ccf-a1f6-4f825bab5e56";
+    </script>
+    <script src="https://tracker-sdk-d8ob.onrender.com/sdk/tracker.js" defer></script>
 </head>
 
 <body>
@@ -45,7 +49,8 @@
                             <div class="col-12 col-md-6">
                                 <label for="phoneno">Contact Number</label>
                                 <br>
-                                <input type="tel" id="phoneno" class="form-control" placeholder="Enter Your Phone No." style="width: 100%;" required>
+                                <input type="tel" id="phoneno" class="form-control" placeholder="Enter Your Phone No."
+                                    style="width: 100%;" required>
                                 <br>
                                 <span id="phoneError" style="color: red; display: none;">Invalid phone number</span>
                             </div>
@@ -55,15 +60,18 @@
                                 <label for="queryType">Select Query Type:</label>
                                 <div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="queryType" id="consultation" value="Consultation" onclick="updateDropdown()" required>
+                                        <input class="form-check-input" type="radio" name="queryType" id="consultation"
+                                            value="Consultation" onclick="updateDropdown()" required>
                                         <label class="form-check-label" for="consultation">Consultation</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="queryType" id="training" value="Training" onclick="updateDropdown()" required>
+                                        <input class="form-check-input" type="radio" name="queryType" id="training"
+                                            value="Training" onclick="updateDropdown()" required>
                                         <label class="form-check-label" for="training">Training</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="queryType" id="other" value="Other" onclick="showOtherInput()" required>
+                                        <input class="form-check-input" type="radio" name="queryType" id="other"
+                                            value="Other" onclick="showOtherInput()" required>
                                         <label class="form-check-label" for="other">Other</label>
                                     </div>
                                 </div>
@@ -88,17 +96,19 @@
                                     <option value="Microbiological Claims">Microbiological Claims</option>
                                 </select>
                             </div>
-                        </div>                        
+                        </div>
                         <div class="form-group row" id="otherInputContainer" style="display: none;">
                             <div class="col-12">
                                 <label for="otherSubject">Please specify your subject:</label>
-                                <input type="text" class="form-control" id="otherSubject" placeholder="Enter your subject">
+                                <input type="text" class="form-control" id="otherSubject"
+                                    placeholder="Enter your subject">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-12">
                                 <label for="message">Any Suggestions</label>
-                                <textarea class="form-control" name="message" id="message" rows="6" placeholder="Enter Your Comments/Suggestions Here (If Any)"></textarea>
+                                <textarea class="form-control" name="message" id="message" rows="6"
+                                    placeholder="Enter Your Comments/Suggestions Here (If Any)"></textarea>
                             </div>
                         </div>
                         <div id="notificationContainer" class="alert alert-success" style="display: none;" role="alert">
@@ -108,18 +118,19 @@
                             <div class="col-12">
                                 <button type="submit" class="btn btn-default btn-submit">Send</button>
                             </div>
-                        </div>            
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    
+
 
     <section class="banner">
         <nav class="navbar navbar-dark navbar-expand-lg flex-column" style="background-color: transparent;">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="./assets/img/Header-logo.webp" alt="" height="60px"></a>
+                <a class="navbar-brand" href="index.html"><img src="./assets/img/Header-logo.webp" alt=""
+                        height="60px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -131,7 +142,8 @@
                         <li class="nav-item"><a class="nav-link" href="./training.html">Training</a></li>
                         <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
                     </ul>
-                    <button id="consultbtn" class="btn btn-default d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                    <button id="consultbtn" class="btn btn-default d-none d-lg-block" data-bs-toggle="modal"
+                        data-bs-target="#consultModal">Consult Now</button>
                 </div>
             </div>
             <div class="slogan-container text-center d-none d-md-block">
@@ -150,17 +162,23 @@
                     <ul class="list-icon">
                         <li><a type="button" href="https://wa.me/918369347927 "><i class="fa fa-whatsapp"
                                     aria-hidden="true"></i></a></li>
-                        <li><a type="button" href="https://www.linkedin.com/in/pinakin-shah-63002235/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                        <li><a type="button" href="https://www.linkedin.com/in/pinakin-shah-63002235/"><i
+                                    class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
                         <li><a type="button" href="https://www.facebook.com/profile.php?id=61567009323516"><i
-                            class="fa fa-facebook-square"></i></a></li>
-                        <li><a type="button" href="https://www.instagram.com/pinakinmicro/profilecard/?igsh=MTdwNjFnMGVtZnM4Mw=="><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    class="fa fa-facebook-square"></i></a></li>
+                        <li><a type="button"
+                                href="https://www.instagram.com/pinakinmicro/profilecard/?igsh=MTdwNjFnMGVtZnM4Mw=="><i
+                                    class="fa fa-instagram" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="row scroll-down">
-                <center><button class="btn btn-default btn-banner d-none d-md-block" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">Discover More</button></center>
-                <img class="mouse-icon d-md-none" src="./assets/img/home/mouse_19.svg" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });" alt="">
+                <center><button class="btn btn-default btn-banner d-none d-md-block"
+                        onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">Discover
+                        More</button></center>
+                <img class="mouse-icon d-md-none" src="./assets/img/home/mouse_19.svg"
+                    onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });" alt="">
             </div>
         </div>
     </section>
@@ -176,7 +194,7 @@
             </center>
             <p class="founder-name">Pinakin Shah</p>
             <p>Founder & Principal Consultant</p>
-                <!-- <a href="#portfolio" class="btn btn-default">Get Started!</a> -->
+            <!-- <a href="#portfolio" class="btn btn-default">Get Started!</a> -->
         </div>
         <div class="section">
             <div class="row">
@@ -187,36 +205,48 @@
                     <div class="card">
                         <img src="./assets/img/home/microscope.svg" class="card-img-top img-thumbnail">
                         <div class="card-body">
-                          <h6 class="card-title">Rapid Microbiology methods for product release</h6>
-                          <p class="card-text d-none d-lg-block">Deployed Rapid Microbiology methods for product release (Led Six sigma green belt project of Rapid product release to market using Celsis) and led multiple Global projects on Innovation and Simplification (Sterilization elimination, optimization of stability, product preservation etc).</p>
+                            <h6 class="card-title">Rapid Microbiology methods for product release</h6>
+                            <p class="card-text d-none d-lg-block">Deployed Rapid Microbiology methods for product
+                                release (Led Six sigma green belt project of Rapid product release to market using
+                                Celsis) and led multiple Global projects on Innovation and Simplification (Sterilization
+                                elimination, optimization of stability, product preservation etc).</p>
                         </div>
                     </div>
                     <div class="card">
                         <img src="./assets/img/home/fx.svg" class="card-img-top img-thumbnail">
                         <div class="card-body">
-                          <h6 class="card-title">Risk level-based assessment programs for Formulations and Raw materials</h6>
-                          <p class="card-text d-none d-lg-block">Developed science-based models for assessing Microbiological risk of raw materials and formulations.</p>
+                            <h6 class="card-title">Risk level-based assessment programs for Formulations and Raw
+                                materials</h6>
+                            <p class="card-text d-none d-lg-block">Developed science-based models for assessing
+                                Microbiological risk of raw materials and formulations.</p>
                         </div>
                     </div>
                     <div class="card">
                         <img src="./assets/img/home/certificate 1.svg" class="card-img-top img-thumbnail">
                         <div class="card-body">
-                          <h6 class="card-title">US FDA (with Zero 483 Observation)</h6>
-                          <p class="card-text d-none d-lg-block">Led three consecutive successful certification/accreditation of Microbiology laboratory for US FDA (with Zero 483 Observation).Conducted Microbiological GMP audits for manufacturing sites, laboratories and suppliers globally.</p>
+                            <h6 class="card-title">US FDA (with Zero 483 Observation)</h6>
+                            <p class="card-text d-none d-lg-block">Led three consecutive successful
+                                certification/accreditation of Microbiology laboratory for US FDA (with Zero 483
+                                Observation).Conducted Microbiological GMP audits for manufacturing sites, laboratories
+                                and suppliers globally.</p>
                         </div>
                     </div>
                     <div class="card">
                         <img src="./assets/img/home/medal.svg" class="card-img-top img-thumbnail">
                         <div class="card-body">
-                          <h6 class="card-title">Identified causes and action plans for challenging contamination issues</h6>
-                          <p class="card-text d-none d-lg-block">Investigated and identified root causes for challenging  failures/contamination issues in manufacturing plants and raw material suppliers at Global level.</p>
+                            <h6 class="card-title">Identified causes and action plans for challenging contamination
+                                issues</h6>
+                            <p class="card-text d-none d-lg-block">Investigated and identified root causes for
+                                challenging failures/contamination issues in manufacturing plants and raw material
+                                suppliers at Global level.</p>
                         </div>
                     </div>
                     <div class="card">
                         <img src="./assets/img/home/certificate 2.svg" class="card-img-top img-thumbnail">
                         <div class="card-body">
-                          <h6 class="card-title">Partnered with Regulatory bodies</h6>
-                          <p class="card-text d-none d-lg-block">Collaborated and Partnered with Regulatory bodies e.g USP, ISO, BIS, Chinese Pharmacopeia etc to create Microbiological standards.</p>
+                            <h6 class="card-title">Partnered with Regulatory bodies</h6>
+                            <p class="card-text d-none d-lg-block">Collaborated and Partnered with Regulatory bodies e.g
+                                USP, ISO, BIS, Chinese Pharmacopeia etc to create Microbiological standards.</p>
                         </div>
                     </div>
                 </div>
@@ -232,13 +262,22 @@
                 <div class="col-11">
                     <dl class="accordion collapsable">
                         <dt>Consultancy<span>&#x2192;</span></dt>
-                        <dd>PinakInMicro offers consultancy in Microbiology design robustness, Audits and inspections, Investigations, Rapid methods, Contamination controls and Quality Systems for Microbiology. <br>
-                            <button id="consultbtn" class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                        <dd>PinakInMicro offers consultancy in Microbiology design robustness, Audits and inspections,
+                            Investigations, Rapid methods, Contamination controls and Quality Systems for Microbiology.
+                            <br>
+                            <button id="consultbtn" class="btn btn-default btn-consult" data-bs-toggle="modal"
+                                data-bs-target="#consultModal">Consult Now</button>
                         </dd>
-    
+
                         <dt>Training<span>&#x2192;</span></dt>
-                        <dd>PinakInMicro offers customized Quality and R&D Microbiology trainings to meet your unique needs. Webinars, workshops and training classes on formulation risk assessment, RM risk assessment, data integrity and compliance in Microbiology laboratory operations, Rapid microbial methods, objectionable organism assessment, Microbiological stability testing and method validation, environmental monitoring are few examples of trainings which we can offer. <br>
-                            <button id="trainingbtn" class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                        <dd>PinakInMicro offers customized Quality and R&D Microbiology trainings to meet your unique
+                            needs. Webinars, workshops and training classes on formulation risk assessment, RM risk
+                            assessment, data integrity and compliance in Microbiology laboratory operations, Rapid
+                            microbial methods, objectionable organism assessment, Microbiological stability testing and
+                            method validation, environmental monitoring are few examples of trainings which we can
+                            offer. <br>
+                            <button id="trainingbtn" class="btn btn-default btn-consult" data-bs-toggle="modal"
+                                data-bs-target="#consultModal">Consult Now</button>
                         </dd>
                     </dl>
                 </div>
@@ -286,10 +325,13 @@
                 <ul class="list-icon">
                     <li><a type="button" href="https://wa.me/918369347927 "><i class="fa fa-whatsapp"
                                 aria-hidden="true"></i></a></li>
-                    <li><a type="button" href="https://www.linkedin.com/in/pinakin-shah-63002235/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                    <li><a type="button" href="https://www.linkedin.com/in/pinakin-shah-63002235/"><i
+                                class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
                     <li><a type="button" href="https://www.facebook.com/profile.php?id=61567009323516"><i
-                        class="fa fa-facebook-square"></i></a></li>
-                    <li><a type="button" href="https://www.instagram.com/pinakinmicro/profilecard/?igsh=MTdwNjFnMGVtZnM4Mw=="><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                class="fa fa-facebook-square"></i></a></li>
+                    <li><a type="button"
+                            href="https://www.instagram.com/pinakinmicro/profilecard/?igsh=MTdwNjFnMGVtZnM4Mw=="><i
+                                class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -298,7 +340,8 @@
                 <div class="col-12 col-md-9">
                     <div class="copyright-text">
                         <p>Copyright &copy; 2024, <a href="index.html">PinakInMicro</a></p>
-                        <p>Developed & Managed By <span><a href="https://wa.me/918591404962">Jinish Varaiya</a></span></p>
+                        <p>Developed & Managed By <span><a href="https://wa.me/918591404962">Jinish Varaiya</a></span>
+                        </p>
                     </div>
                 </div>
             </div>
