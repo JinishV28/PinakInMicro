@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/training.css">
     <script>
-        window.TRACKER_KEY = "trk_live_z5Dx2NRNaR4MyGV0FnVVF1r-XSX8SN1B";
-        window.TRACKER_ID = "f2055265-98c1-41d5-b063-287bce4a7fab";
+        window.__TRACKER_KEY__ = "trk_live_z5Dx2NRNaR4MyGV0FnVVF1r-XSX8SN1B";
+        window.__TRACKER_ID__ = "f2055265-98c1-41d5-b063-287bce4a7fab";
     </script>
+
     <script src="https://tracker-sdk-d8ob.onrender.com/sdk/tracker.js" defer></script>
 </head>
 
@@ -48,7 +49,8 @@
                             <div class="col-12 col-md-6">
                                 <label for="phoneno">Contact Number</label>
                                 <br>
-                                <input type="tel" id="phoneno" class="form-control" placeholder="Enter Your Phone No." style="width: 100%;" required>
+                                <input type="tel" id="phoneno" class="form-control" placeholder="Enter Your Phone No."
+                                    style="width: 100%;" required>
                                 <br>
                                 <span id="phoneError" style="color: red; display: none;">Invalid phone number</span>
                             </div>
@@ -58,15 +60,18 @@
                                 <label for="queryType">Select Query Type:</label>
                                 <div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="queryType" id="consultation" value="Consultation" onclick="updateDropdown()" required>
+                                        <input class="form-check-input" type="radio" name="queryType" id="consultation"
+                                            value="Consultation" onclick="updateDropdown()" required>
                                         <label class="form-check-label" for="consultation">Consultation</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="queryType" id="training" value="Training" onclick="updateDropdown()" required>
+                                        <input class="form-check-input" type="radio" name="queryType" id="training"
+                                            value="Training" onclick="updateDropdown()" required>
                                         <label class="form-check-label" for="training">Training</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="queryType" id="other" value="Other" onclick="showOtherInput()" required>
+                                        <input class="form-check-input" type="radio" name="queryType" id="other"
+                                            value="Other" onclick="showOtherInput()" required>
                                         <label class="form-check-label" for="other">Other</label>
                                     </div>
                                 </div>
@@ -91,17 +96,19 @@
                                     <option value="Microbiological Claims">Microbiological Claims</option>
                                 </select>
                             </div>
-                        </div>                        
+                        </div>
                         <div class="form-group row" id="otherInputContainer" style="display: none;">
                             <div class="col-12">
                                 <label for="otherSubject">Please specify your subject:</label>
-                                <input type="text" class="form-control" id="otherSubject" placeholder="Enter your subject">
+                                <input type="text" class="form-control" id="otherSubject"
+                                    placeholder="Enter your subject">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-12">
                                 <label for="message">Any Suggestions</label>
-                                <textarea class="form-control" name="message" id="message" rows="6" placeholder="Enter Your Comments/Suggestions Here (If Any)"></textarea>
+                                <textarea class="form-control" name="message" id="message" rows="6"
+                                    placeholder="Enter Your Comments/Suggestions Here (If Any)"></textarea>
                             </div>
                         </div>
                         <div id="notificationContainer" class="alert alert-success" style="display: none;" role="alert">
@@ -111,7 +118,7 @@
                             <div class="col-12">
                                 <button type="submit" class="btn btn-default btn-submit">Send</button>
                             </div>
-                        </div>            
+                        </div>
                     </form>
                 </div>
             </div>
@@ -133,7 +140,8 @@
                     <li class="nav-item"><a class="nav-link" href="./training.html">Training</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
                 </ul>
-                <button id="consultbtn" class="btn btn-default d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#consultModal">Consult Now</button>
+                <button id="consultbtn" class="btn btn-default d-none d-lg-block" data-bs-toggle="modal"
+                    data-bs-target="#consultModal">Consult Now</button>
             </div>
         </div>
         <div class="slogan-container text-center d-none d-md-block">
@@ -152,7 +160,7 @@
                         <a class="tablinks" onclick="openCity(event, 'workshops')">Workshops</a>
                         <a class="tablinks" onclick="openCity(event, 'webinars')">Webinars</a>
                     </div>
-                      
+
                     <div id="onsite" class="tabcontent" style="display: block;">
                         <div class="row">
                             <div class="col-12 col-md-5 order-md-2">
@@ -161,11 +169,12 @@
                             <div class="col-12 col-md-7 order-1 abt-content">
                                 <h3>Onsite Training</h3>
                                 <p>Can be customized and organized based on needs.</p>
-                                <button id="trainingbtn" class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Register Now</button>
+                                <button id="trainingbtn" class="btn btn-default btn-consult" data-bs-toggle="modal"
+                                    data-bs-target="#consultModal">Register Now</button>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div id="workshops" class="tabcontent">
                         <div class="row">
                             <div class="col-12 col-md-5 order-md-2">
@@ -173,14 +182,14 @@
                             </div>
                             <div class="col-12 col-md-7 order-1 abt-content">
                                 <h3>Workshops</h3>
-                                <p>-Microbiological  testing operations <br>-Rapid Microbiology methods 
+                                <p>-Microbiological testing operations <br>-Rapid Microbiology methods
                                 </p>
                                 <h4>Coming Soon</h4>
                                 <!-- <button class="btn btn-default btn-consult" data-bs-toggle="modal" data-bs-target="#consultModal">Register Now</button> -->
                             </div>
                         </div>
                     </div>
-                    
+
                     <div id="webinars" class="tabcontent">
                         <div class="row">
                             <div class="col-12 col-md-5 order-lg-2">
@@ -191,8 +200,8 @@
                                 <p>-Microbiological Design robustness <br>
                                     -Data integrity in Microbiology <br>
                                     -Rapid microbial methods <br>
-                                    -Objectionable organism 
-                                     assessment <br>
+                                    -Objectionable organism
+                                    assessment <br>
                                     -Microbiological claims
                                 </p>
                                 <h4>Coming Soon</h4>
@@ -208,9 +217,9 @@
     <div class="background-img jumbotron">
         <div class="row">
             <!-- <div class="col-12"> -->
-                <img src="./assets/img/training/virus.webp" alt="">
-            </div>
+            <img src="./assets/img/training/virus.webp" alt="">
         </div>
+    </div>
     </div>
 
     <div class="need-support section">
@@ -252,10 +261,13 @@
                 <ul class="list-icon">
                     <li><a type="button" href="https://wa.me/918369347927 "><i class="fa fa-whatsapp"
                                 aria-hidden="true"></i></a></li>
-                    <li><a type="button" href="https://www.linkedin.com/in/pinakin-shah-63002235/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                    <li><a type="button" href="https://www.linkedin.com/in/pinakin-shah-63002235/"><i
+                                class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
                     <li><a type="button" href="https://www.facebook.com/profile.php?id=61567009323516"><i
-                        class="fa fa-facebook-square"></i></a></li>
-                    <li><a type="button" href="https://www.instagram.com/pinakinmicro/profilecard/?igsh=MTdwNjFnMGVtZnM4Mw=="><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                class="fa fa-facebook-square"></i></a></li>
+                    <li><a type="button"
+                            href="https://www.instagram.com/pinakinmicro/profilecard/?igsh=MTdwNjFnMGVtZnM4Mw=="><i
+                                class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -264,13 +276,15 @@
                 <div class="col-12 col-md-9">
                     <div class="copyright-text">
                         <p>Copyright &copy; 2024, <a href="index.html">PinakInMicro</a></p>
-                        <p>Developed & Managed By <span><a href="https://wa.me/918591404962">Jinish Varaiya</a></span></p>
+                        <p>Developed & Managed By <span><a href="https://wa.me/918591404962">Jinish Varaiya</a></span>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
